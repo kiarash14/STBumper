@@ -26,10 +26,10 @@ end
 return {
   description = "insudo", 
   usage = {
-    "!invite name [user_name]", 
-    "!invite id [user_id]" },
+    "invite name [user_name]", 
+    "invite id [user_id]" },
   patterns = {
-    "^[!/](insudo)$"
+    "^(insudo)$"
   }, 
   run = run 
 }
