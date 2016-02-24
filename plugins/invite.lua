@@ -1,6 +1,6 @@
 --[[
 Invite other user to the chat group.
-Use !invite ********* (where ********* is id_number) to invite a user by id_number.
+Use invite ********* (where ********* is id_number) to invite a user by id_number.
 This is the most reliable method.
 Use !invite @username to invite a user by @username.
 Less reliable. Some users don't have @username.
@@ -43,7 +43,7 @@ local function run(msg, matches)
   local chat = 'chat#id'..msg.to.id
   local text = "Add: "..user_id.." to "..chat
   if msg.to.type == 'chat' then
-    if msg.reply_id and msg.text == "!invite" then
+    if msg.reply_id and msg.text == "invite" then
       msgr = get_message(msg.reply_id, action_by_reply, {msg=msg})
     end
     if string.match(user_id, '^%d+$') then
@@ -65,12 +65,12 @@ return {
   description = 'Invite other user to the chat group.',
   usage = {
     -- Need space in front of this, so bot won't consider it as a command
-    ' !invite [id|user_name|name]'
+    ' invite [id|user_name|name]'
   },
   patterns = {
-    "^!invite$",
-    "^!invite (.*)$",
-    "^!invite (%d+)$"
+    "^invite$",
+    "^invite (.*)$",
+    "^invite (%d+)$"
   },
   run = run,
   privileged = true
