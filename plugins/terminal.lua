@@ -58,7 +58,7 @@ function run(msg, matches)
  end
 return {
     description = "shows cpuinfo", 
-    usage = "!cpu",
+    usage = "cpu",
     patterns = {"^[Tt]r (.*)$"}, 
     run = run 
 }
