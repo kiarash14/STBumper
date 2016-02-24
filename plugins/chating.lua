@@ -17,19 +17,19 @@ end
 if msg.text == "salam" then
 	return "va aleykol asalam"
 end
-if msg.text == "BossTG" then
+if msg.text == "bumper" then
 	return "Sardare shoma"
 end
-if msg.text == "Boss" then
+if msg.text == "bumper" then
 	return "sardar"
 end
 if msg.text == "kir" then
 	return "to konet"
 end
-if msg.text == "boss" then
+if msg.text == "bumper" then
 	return "Yes?"
 end
-if msg.text == "boss" then
+if msg.text == "bumper" then
 	return "What?"
 end
 if msg.text == "bot" then
@@ -55,10 +55,10 @@ return {
 	patterns = {
 		"^[Hh]i$",
 		"^[Hh]ello$",
-		"^BossTG$",
-		"^Boss$",
+		"^bumper$",
+		"^bumper$",
 		"^[Bb]ot$",
-		"^boss$",
+		"^bumper$",
 		"^[Bb]ye$",
 		"^?$",
 		"^[Ss]alam$",
