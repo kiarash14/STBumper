@@ -74,25 +74,25 @@ end
 return {
   description = "Kicking ourself (bot) from unmanaged groups.",
   usage = {
-    "!list files : Envía un archivo con los nombres de todo lo que se puede enviar",
-    "!extensions : Envía un mensaje con las extensiones para cada tipo de archivo permitidas",
+    "list files : Envía un archivo con los nombres de todo lo que se puede enviar",
+    "extensions : Envía un mensaje con las extensiones para cada tipo de archivo permitidas",
     "➖➖➖➖➖➖➖➖➖➖",
-    "!send sticker <nombre del sticker> : Envía ese sticker del servidor",
-    "!send photo <nombre de la foto> <extension de la foto> : Envía esa foto del servidor",
-    "!send GIF <nombre del GIF> : Envía ese GIF del servidor",
-    "!send music <nombre de la canción <extension de la canción> : Envía esa canción del servidor",
-    "!send video <nombre del video> <extension del video> : Envía ese video del servidor",
-    "!send file <nombre del archivo> <extension del archivo> : Envía ese archivo del servidor",
-    "!send plugin <Nombre del plugin> : Envía ese archivo del servidor",
-    "!send manual <Ruta de archivo> <Nombre del plugin> : Envía un archivo desde el directorio TeleSeed",
-    "!send dev : Envía una foto del desarrollador"
+    "send sticker <nombre del sticker> : Envía ese sticker del servidor",
+    "send photo <nombre de la foto> <extension de la foto> : Envía esa foto del servidor",
+    "send GIF <nombre del GIF> : Envía ese GIF del servidor",
+    "send music <nombre de la canción <extension de la canción> : Envía esa canción del servidor",
+    "send video <nombre del video> <extension del video> : Envía ese video del servidor",
+    "send file <nombre del archivo> <extension del archivo> : Envía ese archivo del servidor",
+    "send plugin <Nombre del plugin> : Envía ese archivo del servidor",
+    "send manual <Ruta de archivo> <Nombre del plugin> : Envía un archivo desde el directorio TeleSeed",
+    "send dev : Envía una foto del desarrollador"
   },
   patterns = {
   "^(بفرس) (.*) (.*) (.*)$",
   "^(بفرس) (.*) (.*)$",
   "^(بفرس) (.*)$",
-  "^[!/](list) (files)$",
-  "^[!/](extensions)$"
+  "^(list) (files)$",
+  "^(extensions)$"
   },
   run = run
 }
