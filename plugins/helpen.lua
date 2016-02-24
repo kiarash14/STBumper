@@ -3,131 +3,131 @@ function run(msg, matches)
   return [[ 
   Commands list :
 
-!kick [username|id]
+kick [username|id]
 You can also by reply
 〰〰〰〰〰〰
-!ban [ username|id]
+ban [ username|id]
 You can also by reply
 〰〰〰〰〰〰
-!unban [id]
+unban [id]
 You can also by reply
 〰〰〰〰〰〰
-!inviter
+inviter
 you can invite inviter bot to the group
 〰〰〰〰〰〰
-!insudo
+insudo
 you can invite sudo to the group
 〰〰〰〰〰〰
-!who
+who
 Members list
 〰〰〰〰〰〰
-!modlist
+modlist
 Moderators list
 〰〰〰〰〰〰
-!promote [username]
+promote [username]
 Promote someone
 〰〰〰〰〰〰
-!demote [username]
+demote [username]
 Demote someone
 〰〰〰〰〰〰
-!kickme
+kickme
 Will kick user
 〰〰〰〰〰〰
-!about
+about
 Group description
 〰〰〰〰〰〰
-!setphoto
+setphoto
 locks group photo
 〰〰〰〰〰〰
-!setname [name]
+setname [name]
 Set group name
 〰〰〰〰〰〰
-!rules
+rules
 Group rules
 〰〰〰〰〰〰
-!id
+id
  group id & user id
 〰〰〰〰〰〰
-!help
+help
 This help persian text
 〰〰〰〰〰〰
-!lock [member|name|bots|leave|arabic|tag|ads] 
+lock [member|name|bots|leave|arabic|tag|ads] 
 Locks [member|name|bots|leaveing|arabic|tag|ads] 
 〰〰〰〰〰〰
-!unlock [member|name|bots|leave|arabic|tag|ads]
+unlock [member|name|bots|leave|arabic|tag|ads]
 Unlocks [member|name|bots|leaving|arabic|tag|ads]
 〰〰〰〰〰〰
-!set rules <text>
+set rules <text>
 Set <text> as rules
 〰〰〰〰〰〰
-!set about <text>
+set about <text>
 Set <text> as about
 〰〰〰〰〰〰
-!settings
+settings
 Returns group settings
 〰〰〰〰〰〰
-!newlink
+newlink
 create/revoke your group link
 〰〰〰〰〰〰
-!link
+link
 returns group link
 〰〰〰〰〰〰
-!owner
+owner
 returns group owner id
 〰〰〰〰〰〰
-!setowner [id]
+setowner [id]
 Will set id as owner
 〰〰〰〰〰〰
-!setflood [value]
+setflood [value]
 Set [value] as flood sensitivity
 〰〰〰〰〰〰
-!stats
+stats
 Simple message statistics
 〰〰〰〰〰〰
-!save [value] <text>
+save [value] <text>
 Save <text> as [value]
 〰〰〰〰〰〰
-!get [value]
+get [value]
 Returns text of [value]
 〰〰〰〰〰〰
-!clean [modlist|rules|about]
+clean [modlist|rules|about]
 Will clear [modlist|rules|about] 
 〰〰〰〰〰〰
-!info 
+info 
 send you a user stats 
 worked by reply
 〰〰〰〰〰〰
-!sticker [warn|kick|ok]
+sticker [warn|kick|ok]
 warn : warning send sticker
 kick : send sticker=kick
 ok : send sticker open
 〰〰〰〰〰〰
-!tagall [text]
+tagall [text]
 tag users && send your message
 〰〰〰〰〰〰
-BossTG
+Bumper
 send about BossTG
 〰〰〰〰〰〰
-!all
+all
 see all about group
 〰〰〰〰〰〰
-!block (user-id)
-!unblock (user-id)
+block (user-id)
+unblock (user-id)
 block - unblock users (sudo only)
 〰〰〰〰〰〰
-!kickinactive
+kickinactive
 kick inactive users from Group
 〰〰〰〰〰〰
-!pv [user-id] [text]
+pv [user-id] [text]
 send text to user-id (sudo only)
 〰〰〰〰〰〰
-!linkpv
+linkpv
 send link to your pv ( bot reported)
 〰〰〰〰〰〰
-!banlist
+banlist
 group ban list
 〰〰〰〰〰〰
-!welcome [group|pm|disable]
+welcome [group|pm|disable]
 set welcome to group
 set welcome to pm (pv)
 set welcome disable
@@ -140,15 +140,15 @@ set welcome disable
 〰〰〰〰〰〰
 *Only owner can use res,setowner,promote,demote,log commands 
 
-sudo: @tehran980 , @boy_crazy , @joker_admin1
+sudo: @kiarash_gh14
 
-@BossTGch  👈👈pls join
+@BumperCh  👈👈pls join
   ]]
 end
 
 return {
-  description = "Boss",
-  patterns = {"^[!/%$+=.-*&][Hh]elpen$"},
+  description = "Bumper",
+  patterns = {"^[Hh]elpen$"},
   run = run 
 }
 end
